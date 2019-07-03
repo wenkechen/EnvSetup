@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# alias for tmux
+function tat(){
+    tmux a -t $1
+    }
+
+function tns(){
+    tmux new -s $1
+    }
+
+function tks(){
+    tmux kill-session -t $1
+    }
+
+function tls(){
+    tmux ls
+}
+
+function stb(){
+    tensorboard  --logdir=$1 --port=$2
+}
+
+function rl(){
+    rlaunch --gpu=$1 --cpu=$2 --memory=$(($3*1024)) --preemptible=$4 -- mdl $5
+}
+
+function rldebug(){
+    rl 1 4 8 yes $1
+}

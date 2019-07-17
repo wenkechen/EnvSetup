@@ -67,6 +67,11 @@ vim +BundleInstall +qall
 
 ## Install tree
 
+### On Ubuntu
+```shell
+sudo apt-get install tree
+```
+
 ### On MacOS
 ```shell
 brew install tree

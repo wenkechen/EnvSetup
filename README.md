@@ -93,3 +93,4 @@ Please refer to https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/ if getting t
 
 Install [Pytorch](https://pytorch.org/)
 
+Attention: remove "-c pytorch" when installing pytorch

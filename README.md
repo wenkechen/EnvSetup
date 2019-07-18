@@ -77,6 +77,13 @@ sudo apt-get install tree
 brew install tree
 ```
 
+## Install imgcat
+```shell
+curl https://www.iterm2.com/utilities/imgcat > imgcat
+chmod +x imgcat
+sudo mv imgcat /usr/local/bin
+```
+
 ## Install Anaconda and Pytorch
 Install [Anaconda](https://www.anaconda.com/distribution/)
 

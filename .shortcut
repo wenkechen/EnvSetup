@@ -8,15 +8,15 @@ alias go-wh-cartoon="ssh -CAXY estimation.chenwenke.brw@wh-a.brainpp.cn"
 # shortcuts for tmux
 function tat(){
     tmux a -t $1
-    }
+}
 
 function tns(){
     tmux new -s $1
-    }
+}
 
 function tks(){
     tmux kill-session -t $1
-    }
+}
 
 function tls(){
     tmux ls

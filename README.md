@@ -1,4 +1,5 @@
 # EnvSetup
+
 Environment Setup Handbook
 
 ## Install Oh My Zsh
@@ -34,12 +35,14 @@ sudo apt install tmux
 sudo yum install tmux
 ```
 
-### On MacOS
+### On macOS
+
 ```shell
 brew install tmux
 ```
 
 ## Configure tmux
+
 ```shell
 cp .tmux.conf ~/.tmux.conf
 cp .shortcut ~/.shortcut
@@ -51,6 +54,7 @@ source ~/.shortcut
 ```
 
 ## Configure vim
+
 ```shell
 cp .vimrc ~/.vimrc
 ```
@@ -68,16 +72,53 @@ vim +BundleInstall +qall
 ## Install tree
 
 ### On Ubuntu
+
 ```shell
 sudo apt-get install tree
 ```
 
-### On MacOS
+### On macOS
+
 ```shell
 brew install tree
 ```
 
+## Modify hosts file
+
+### Hosts file format
+
+Entries in the hosts file have the following format:
+
+```text
+IPAddress DomainName [DomainAliases]
+```
+
+The IP address and the domain names should be separated by at least one space or tab.
+
+### On macOS
+
+Add the following entries into `/etc/hosts`:
+
+```text
+# Added by DevOps
+127.0.0.1	local.vpc.com
+192.168.1.20	intranet.vpc.com
+# End of section
+```
+
+### On Ubuntu
+
+Add the following entries into `/etc/hosts`:
+
+```text
+# Added by DevOps
+127.0.0.1	local.vpc.com
+192.168.1.20	intranet.vpc.com
+# End of section
+```
+
 ## Install imgcat
+
 ```shell
 curl https://www.iterm2.com/utilities/imgcat > imgcat
 chmod +x imgcat
@@ -85,9 +126,11 @@ sudo mv imgcat /usr/local/bin
 ```
 
 ## Install Anaconda and Pytorch
+
 Install [Anaconda](https://www.anaconda.com/distribution/)
 
-Add channels for conda
+Add channels for conda:
+
 ```shell
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/

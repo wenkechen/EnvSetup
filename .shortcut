@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # alias
-alias go-wh-estimation="ssh paul@intranet.vpc.com"
+alias go-intranet="ssh paul@intranet.vpc.com"
 
 # shortcuts for tmux
 function tat(){

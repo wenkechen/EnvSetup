@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 # alias
-alias go-wh-pytorch="ssh -CAXY pytorch.chenwenke.ws2@wh-a.brainpp.cn"
-alias go-wh-estimation="ssh -CAXY estimation.chenwenke.brw@wh-a.brainpp.cn"
-alias go-wh-cartoon="ssh -CAXY estimation.chenwenke.brw@wh-a.brainpp.cn"
+alias go-wh-estimation="ssh paul@intranet.vpc.com"
 
 # shortcuts for tmux
 function tat(){
@@ -20,18 +18,4 @@ function tks(){
 
 function tls(){
     tmux ls
-}
-
-# shortcuts for tensorboard
-function stb(){
-    tensorboard  --logdir=$1 --port=$2
-}
-
-# shortcuts for rlaunch
-function rl(){
-    rlaunch --gpu=$1 --cpu=$2 --memory=$(($3*1024)) --preemptible=$4 -- mdl $5
-}
-
-function rldebug(){
-    rl 1 4 8 yes $1
 }

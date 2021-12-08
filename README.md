@@ -1,5 +1,24 @@
 # EnvSetup
 
+- [Install Oh My Zsh](#install-oh-my-zsh)
+  - [via curl](#via-curl)
+  - [via wget](#via-wget)
+- [Install tmux](#install-tmux)
+  - [On Ubuntu and Debian](#on-ubuntu-and-debian)
+  - [On CentOS and Fedora](#on-centos-and-fedora)
+  - [On macOS](#on-macos)
+- [Configure tmux](#configure-tmux)
+- [Configure vim](#configure-vim)
+- [Install tree](#install-tree)
+  - [On Ubuntu](#on-ubuntu)
+  - [On macOS](#on-macos-1)
+- [Modify hosts file](#modify-hosts-file)
+  - [Hosts file format](#hosts-file-format)
+  - [On macOS](#on-macos-2)
+  - [On Ubuntu](#on-ubuntu-1)
+- [Install imgcat](#install-imgcat)
+- [Install Anaconda and Pytorch](#install-anaconda-and-pytorch)
+
 Environment Setup Handbook
 
 ## Install Oh My Zsh
@@ -94,6 +113,8 @@ IPAddress DomainName [DomainAliases]
 ```
 
 The IP address and the domain names should be separated by at least one space or tab.
+
+The hosts file changes take effect immediately except in cases that the DNS entries are cached by applications.
 
 ### On macOS
 

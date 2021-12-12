@@ -12,10 +12,13 @@
 - [Install tree](#install-tree)
   - [On Ubuntu](#on-ubuntu)
   - [On macOS](#on-macos-1)
+- [Install jq](#install-jq)
+  - [On Ubuntu](#on-ubuntu-1)
+  - [On macOS](#on-macos-2)
 - [Modify hosts file](#modify-hosts-file)
   - [Hosts file format](#hosts-file-format)
-  - [On macOS](#on-macos-2)
-  - [On Ubuntu](#on-ubuntu-1)
+  - [On macOS](#on-macos-3)
+  - [On Ubuntu](#on-ubuntu-2)
 - [Install imgcat](#install-imgcat)
 - [Install Anaconda and Pytorch](#install-anaconda-and-pytorch)
 
@@ -102,6 +105,20 @@ sudo apt-get install tree
 brew install tree
 ```
 
+## Install jq
+
+### On Ubuntu
+
+```shell
+sudo apt-get install jq
+```
+
+### On macOS
+
+```shell
+brew install jq
+```
+
 ## Modify hosts file
 
 ### Hosts file format
@@ -125,6 +142,22 @@ Add the following entries into `/etc/hosts`:
 127.0.0.1	local.vpc.com
 192.168.1.20	intranet.vpc.com
 # End of section
+
+# GitHub
+# From https://ipaddress.com/website/github.com
+140.82.113.3	github.com
+# From https://ipaddress.com/website/github.global.ssl.fastly.net#ipinfo
+199.232.69.194	github.global.ssl.fastly.net
+# From https://ipaddress.com/website/assets-cdn.github.com
+185.199.108.153	assets-cdn.github.com
+185.199.109.153	assets-cdn.github.com
+185.199.110.153	assets-cdn.github.com
+185.199.111.153	assets-cdn.github.com
+2606:50c0:8000::153	assets-cdn.github.com
+2606:50c0:8001::153	assets-cdn.github.com
+2606:50c0:8002::153	assets-cdn.github.com
+2606:50c0:8003::153	assets-cdn.github.com
+# sudo killall -HUP mDNSResponder;say DNS cache has been flushed
 ```
 
 ### On Ubuntu
@@ -136,6 +169,22 @@ Add the following entries into `/etc/hosts`:
 127.0.0.1	local.vpc.com
 192.168.1.20	intranet.vpc.com
 # End of section
+
+# GitHub
+# From https://ipaddress.com/website/github.com
+140.82.113.3	github.com
+# From https://ipaddress.com/website/github.global.ssl.fastly.net#ipinfo
+199.232.69.194	github.global.ssl.fastly.net
+# From https://ipaddress.com/website/assets-cdn.github.com
+185.199.108.153	assets-cdn.github.com
+185.199.109.153	assets-cdn.github.com
+185.199.110.153	assets-cdn.github.com
+185.199.111.153	assets-cdn.github.com
+2606:50c0:8000::153	assets-cdn.github.com
+2606:50c0:8001::153	assets-cdn.github.com
+2606:50c0:8002::153	assets-cdn.github.com
+2606:50c0:8003::153	assets-cdn.github.com
+# sudo killall -HUP mDNSResponder;say DNS cache has been flushed
 ```
 
 ## Install imgcat

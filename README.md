@@ -69,7 +69,6 @@ Activate the plugin in ~/.zshrc
 plugins=([plugins...] zsh-syntax-highlighting)
 ```
 
-
 ## Install tmux
 
 ### On Ubuntu and Debian

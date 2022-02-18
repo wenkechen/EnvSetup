@@ -3,6 +3,8 @@
 - [Install Oh My Zsh](#install-oh-my-zsh)
   - [via curl](#via-curl)
   - [via wget](#via-wget)
+  - [Install zsh-autosuggestions](#install-zsh-autosuggestions)
+  - [Install zsh-syntax-highlighting](#install-zsh-syntax-highlighting)
 - [Install tmux](#install-tmux)
   - [On Ubuntu and Debian](#on-ubuntu-and-debian)
   - [On CentOS and Fedora](#on-centos-and-fedora)
@@ -42,6 +44,31 @@ Set zsh as default shell if need
 ```shell
 sudo chsh -s /bin/zsh [username]
 ```
+
+### Install zsh-autosuggestions
+
+```shell
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Activate the plugin in ~/.zshrc
+
+```text
+plugins=([plugins...] zsh-autosuggestions)
+```
+
+### Install zsh-syntax-highlighting 
+
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+Activate the plugin in ~/.zshrc
+
+```text
+plugins=([plugins...] zsh-syntax-highlighting)
+```
+
 
 ## Install tmux
 

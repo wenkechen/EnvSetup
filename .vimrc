@@ -6,6 +6,9 @@ set hlsearch
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,GB2312,big5
 set cursorline
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set autoindent
 set smartindent
 set scrolloff=4

@@ -78,6 +78,10 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'valloric/youcompleteme'
 
 
 

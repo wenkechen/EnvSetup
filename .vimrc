@@ -15,6 +15,7 @@ set scrolloff=4
 set showmatch
 set nu
 set mouse=a
+set background=dark
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -63,7 +64,6 @@ func! CompileRunGcc()
 endfunc
 
 
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -87,16 +87,14 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'valloric/youcompleteme'
 
 
-
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.git$']
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 let g:completor_python_binary = '/path/to/python/with/jedi/installed'

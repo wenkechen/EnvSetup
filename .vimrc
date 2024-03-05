@@ -25,12 +25,12 @@ let python_highlight_all=1
 au Filetype python set tabstop=4
 au Filetype python set softtabstop=4
 au Filetype python set shiftwidth=4
-au Filetype python set textwidth=79
+au Filetype python set textwidth=120
 au Filetype python set expandtab
 au Filetype python set autoindent
 au Filetype python set fileformat=unix
 autocmd Filetype python set foldmethod=indent
-autocmd Filetype python set foldlevel=99
+autocmd Filetype python set foldlevel=140
 
 set nocompatible              " required
 filetype off                  " required

@@ -84,7 +84,6 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'valloric/youcompleteme'
 
 
 " All of your Plugins must be added before the following line

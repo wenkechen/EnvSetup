@@ -223,7 +223,7 @@ sudo mv imgcat /usr/local/bin
 
 ## Install Anaconda and Pytorch
 
-Install [Anaconda](https://www.anaconda.com/distribution/)
+Install [Anaconda](https://www.anaconda.com/download)
 
 Add channels for conda:
 
